@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+    <html lang="Pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/logo.png"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/styles.css">
+
+        <title>Saturno</title>
+    </head>
+    <body>
+     
+     
+      <!--Header do site-->
+      <nav class="navbar">
+        <div class="content">
+          <ul class="menu-list">
+            <div class="icon cancel-btn">
+              <i class="fas fa-times"></i>
+            </div>
+            <li><a href="#HOME">Inicio</a></li>
+            <li><a href="#PQS">Pesquisa</a></li>
+            <li><a href="#CALCU">Calculadora</a></li>
+            <li><a href="#VIDEO">Video</a></li>
+            <li><a href="#TIME">Equipe</a></li>
+          </ul>
+          <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+      </div>
+      
+      
+      <!--Home onde fica o início do site-->
+      <div class="home" id="HOME">
+         <div class="home_txt">
+             <h1>Saturno</h1>
+                <img class="home_img" src="./img/logo.png" alt="">
+      <div class="home__shadow"></div>
+        </div>
+      </div>
+
+
+      <!--Cards onde estão localizados as pesquisas-->       
+      <div class="pesquisa">
+        <h2>⛅Termodinâmica</h2></div>
+          <div class="boxe" id="PQS" >
+            <div class="card">
+            <div class="align">
+                <span class="red"></span>
+                <span class="yellow"></span>
+                <span class="green"></span>
+            </div>
+            <h1>O que é?</h1>
+            <p>
+                A termodinâmica é uma área da Física que estuda as transferências de energia, em busca de compreender as relações entre o calor
+            </p>
+      </div>
+      <div class="card">
+            <div class="align">
+                <span class="red"></span>
+                <span class="yellow"></span>
+                <span class="green"></span>
+            </div>
+        
+            <h1>Primeira lei</h1>
+            <p>
+              A Primeira Lei da Termodinâmica se ocupa daquilo que é necessário para que trabalho seja transformado em calor, tem como fundamento o princípio da conservação de energia
+            </p>
+      </div>
+      <div class="card">
+            <div class="align">
+                <span class="red"></span>
+                <span class="yellow"></span>
+                <span class="green"></span>
+            </div>
+        
+            <h1>Segunda lei</h1>
+            <p>
+              A Segunda Lei da Termodinâmica trata da transferência de energia térmica. Isso quer dizer que ela indica as trocas de calor que têm tendência para igualar temperaturas diferentes
+          </p>
+        </div>
+      </div>
+
+
+      <!--conidiano e o saturno feito em css-->
+      <div class="about">
+        <div class="contentBx">
+          <h2>Cotidiano:</h2>
+            <p>Um ótimo exemplo que podemos encontrar em nosso dia a dia se aplicam atualmente em várias situações do nosso cotidiano. Por exemplo: máquinas térmicas e refrigeradores, motores de carros e processos de transformação de minérios e derivados do petróleo.</p>
+              </div>
+                <a class="planet"></a>
+       </div>
+       
+       
+       <!--cauculadora-->
+       <div class="calc" id="CALCU">
+        <div class="calctx">
+         <h2>Tipo de cálculos</h2>
+          <p>🌎-ΔU=Q-W     🌙-Q=ΔU+W <br> 
+            ☀️-W=Q-ΔU     🪐-T/Q1</p>
+          </div>
+        <div class="Calculadora">
+        <form action="" class="calculator" name="calc">
+         <input type="text" name="txt" class="value"/>
+         <span class="num clear" onclick="calc.txt.value =''">c</span>
+         <span onclick="document.calc.txt.value +='/'">🪐</span>
+         <span onclick="document.calc.txt.value +='-'">🌎</span>
+         <span onclick="document.calc.txt.value +='7'">7</span>
+         <span onclick="document.calc.txt.value +='8'">8</span>
+         <span onclick="document.calc.txt.value +='9'">9</span>
+         <span onclick="document.calc.txt.value +='-'">☀️</span>
+         <span onclick="document.calc.txt.value +='4'">4</span>
+         <span onclick="document.calc.txt.value +='5'">5</span>
+         <span onclick="document.calc.txt.value +='6'">6</span>
+         <span class="num plus" onclick="document.calc.txt.value +='+'">🌙</span>
+         <span onclick="document.calc.txt.value +='1'">1</span>
+         <span onclick="document.calc.txt.value +='2'">2</span>
+         <span onclick="document.calc.txt.value +='3'">3</span>
+         <span onclick="document.calc.txt.value +='0'">0</span>
+         <span onclick="document.calc.txt.value +='.'">.</span>
+         <span onclick="document.calc.txt.value +='00'">00</span>
+         <span class="numequal" onclick="document.calc.txt.value =calculation(calc.txt.value)">=</span>
+         </form>
+         <div id="history">
+         <h3>Historico:</h3>
+         <div id="result"></div>
+        </div>
+        </div> 
+        </div>
+        </div>
+
+
+        <!--Texto e botão sobre o experimento-->
+        <div class="fogute" id="VIDEO">
+          <div class="foguetetxt">
+            <h2>Experimento:</h2>
+          <p>Á aproximar o acendedor perto do furo da tampa da garrafa inicia-se a reação de combustão com grande liberação de energia na forma de calor, o calor produzido na reação de combustão aquece os gases no interior da garrafa que se expandem rapidamente como apenas uma única saída na garrafa sendo assim os gases aquecidos saem pelo orifício da tampinha em alta velocidade devido à pressão exercida pela garrafa fazendo assim ela se mover, se aplica também em foguetes convencionais que utiliza hidrogênio e oxigênio ao invés de misturar e álcool que usamos no nosso experimento.</p>
+        </div>
+        <div class="btn">
+        <div class="play"></div>
+        </div>
+        <div class="mp4">
+        <video src="./video/Trb_Saturno.mp4" controls></video>
+        <b class="Fechar">X</b>
+        </div>
+        </div>
+        
+        
+        <!--cards sobre a equipe-->
+        <div class="pesquisa" id="TIME"><h2>Equipe</h2></div>
+         <div class="time">
+          <div class="cards">
+            <div class="imgBx">
+              <img src="./img/victor.png">
+            </div>
+            <div class="content">
+              <div class="details">
+                  <h2>Victor Hugo<br><span>Programação</span></h2>
+                  <Ul class="ion-icon">
+                      <li><a href="https://www.instagram.com/victor.hhh/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                      <li><a href="https://www.linkedin.com/in/victor-hugo-de-souza/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                      <li><a href="https://github.com/victorh21"><ion-icon name="logo-github"></ion-icon></a></li>
+                  </Ul>
+              </div>
+          </div>
+      </div>
+      <div class="cards">
+        <div class="imgBx">
+          <img src="./img/gab.jpeg">
+      </div>
+      <div class="content">
+          <div class="details">
+              <h2>Gabriel Gouveia<br><span>Pesquisa</span></h2>
+              <Ul class="ion-icon">
+                  <li><a href="https://www.instagram.com/gab.gouveiaa__/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                  <li><a href="https://www.linkedin.com/in/gabriel-gouveia-25580b231/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                  <li><a href="https://github.com/gabgouveia"><ion-icon name="logo-github"></ion-icon></a></li>
+                  <li><a href="https://github.com/martinskaua01"><ion-icon name="logo-tiktok"></ion-icon></a></li>
+              </Ul>
+          </div>
+       </div>
+    </div>
+  <div class="cards">
+        <div class="imgBx">
+          <img src="./img/th.jpeg">
+      </div>
+      <div class="content">
+          <div class="details">
+              <h2>Thiago Àvila<br><span>Pesquisa</span></h2>
+              <Ul class="ion-icon">
+                  <li><a href="https://www.instagram.com/thiago_avila02/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                  <li><a href="https://www.linkedin.com/in/thiago-avila-099b40232/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                  <li><a href="https://github.com/thiagoavila7"><ion-icon name="logo-github"></ion-icon></a></li>
+              </Ul>
+          </div>
+       </div>
+    </div>
+  </div>
+   
+  
+  <!--o footer-->
+   <footer>
+         <div class="main-content">
+             <div class="left box">
+                <h2>SENAI</h2>
+                 <div class="content">
+                   <p>O SENAI é referência nacional no apoio à tecnologia e inovação em empresas industriais de todos os portes e segmentos. Há 4 décadas, oferta cursos de iniciação profissional, graduação e pós-graduação tecnológica para colaboradores de 28 áreas da indústria brasileira.</p>
+                     <div class="social">
+                       <a href="https://pt-br.facebook.com/senainacional/"><span class="fab fa-facebook-f"></span></a>
+                        <a href="https://www.instagram.com/senai.florianopolis/"><span class="fab fa-instagram"></span></a>
+                        <a href="https://www.youtube.com/c/senaibrasil"><span class="fab fa-youtube"></span></a>
+                     </div>
+                   </div>
+                  </div>
+                  <div class="center box">
+                    <h2>Informações</h2>
+                    <div class="content">
+                      <div class="place">
+                        <span class="fas fa-map-marker-alt"></span>
+                        <span class="text">Saco Grande, Florianópolis</span>
+                      </div>
+                      <div class="phone">
+                        <span class="fas fa-phone-alt"></span>
+                        <span class="text">(48) 3239-5800</span>
+                      </div>
+                      <div class="email">
+                        <span class="fas fa-envelope"></span>
+                        <span class="text">escola.s.florianopolis@sesisc.org.br</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right box">
+                    <h2>Opinião</h2>
+                    <div class="content">
+                      <form action="https://formsubmit.co/victorhugodesouza67@gmail.com " method="POST">
+                        <div class="email">
+                          <div class="text">Email :</div>
+                          <input type="email" required>
+                        </div>
+                        <div class="msg">
+                          <div class="text">Menssagem:</div>
+                          <textarea rows="2" cols="25" required></textarea>
+                        </div>
+                        <div class="btn">
+                          <button type="submit">Enviar</button>
+                        </div>
+                        <input type="hidden" name="_subject" value="Sugestões!!">
+                        <input type="text" name="_honey" style="display:none">
+                        <input type="hidden" name="_captcha" value="false">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottão">
+              <center>
+              <span class="credit">Fonte de pesquisa <a href="https://www.todamateria.com.br/termodinamica/#:~:text=A%20termodin%C3%A2mica%20%C3%A9%20uma%20%C3%A1rea,realizados%20em%20um%20processo%20f%C3%ADsico.">Toda matéria</a></span>
+           </center>
+        </div>
+  </footer>
+
+
+              <!--Script para mandar e excluir do loca-Storage os cauculos da calculadora-->
+              <script type="text/javascript">
+
+                let allResult = JSON.parse(localStorage.getItem('allResult')) || []; 
+                showData();
+              
+                function deleteResult( key ){
+                allResult.slice(key , 1);
+              
+                const datafiltered =allResult.filter((e, i)=> i != key);
+                localStorage.setItem('allResult', JSON.stringify(datafiltered));
+                allResult = datafiltered;
+              
+                window.location.reload(true);
+              }
+              function showData(){
+                let resultdiv = document.getElementById('result')
+              
+                allResult.map((e, i) => {
+                  resultdiv.innerHTML = `<div class="d-flex">
+                    <p> ${e.result}'</p>
+                    <button onclick="deleteResult(${i})" >Excluir</button>
+                    `;
+                  })
+                }
+                function calculation(v)
+                {
+                  para = document.createElement('p');
+                  data = v + '=' + eval(v);
+              
+                  allResult.push({result : data});
+                  localStorage.setItem("allResult", JSON.stringify(allResult));
+                  allResult = JSON.parse(localStorage.getItem('allResult'));
+                  window.location.reload(true);
+                }
+              </script>
+              
+              
+               <!--Configuração da nav-bar para celular-->
+              <script>
+                const body = document.querySelector("body");
+                const navbar = document.querySelector(".navbar");
+                const menuBtn = document.querySelector(".menu-btn");
+                const cancelBtn = document.querySelector(".cancel-btn");
+                menuBtn.onclick = ()=>{
+                  navbar.classList.add("show");
+                  menuBtn.classList.add("hide");
+                  body.classList.add("disabled");
+                }
+                cancelBtn.onclick = ()=>{
+                  body.classList.remove("disabled");
+                  navbar.classList.remove("show");
+                  menuBtn.classList.remove("hide");
+                }
+                window.onscroll = ()=>{
+                  this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+                }
+              </script>
+
+
+              <!--Botão pro video-->
+              <script>
+                  let btn = document.querySelector('.btn');
+                  let mp4 = document.querySelector('.mp4');
+                  let Fechar = document.querySelector('.Fechar');
+                  let video1 = document.querySelector('video');
+                  btn.onclick = function(){
+                    btn.classList.add('active')
+                    mp4.classList.add('active')
+                    video.play()
+                    video.currentTime = 0;
+                  }
+                  Fechar.onclick = function(){
+                    btn.classList.remove('active')
+                    mp4.classList.remove('active')
+                    video.pause()
+                  }
+                </script>
+
+
+              <!--Icones dos card e footer-->
+              <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+              <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+              <!--Movimeto dos cards-->
+              <script type="text/javascript" src="./js/three.js"></script>
+              <script>VanillaTilt.init(document.querySelectorAll(".cards"), {
+                  max: 25,
+                  speed:300,
+              });
+          </script>
+
+
+             <!--Movimeto da calculadora-->
+             <script type="text/javascript" src="./js/three.js"></script>
+             <script>VanillaTilt.init(document.querySelectorAll(".Calculadora"), {
+                  max: 25,
+                  speed:400,
+             });
+         </script>
+    </body>
+</html>
